@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002961AD26CEBEABEFA17118 /* Pods_NBCUTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C983BAE480E5AC9F176773 /* Pods_NBCUTests.framework */; };
+		4D367203DF4278CD9FDA7F3F /* Pods_NBCU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DE0227B900A4DB3ACC1760 /* Pods_NBCU.framework */; };
 		F436A6A820B734DA00F257E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436A6A720B734DA00F257E4 /* AppDelegate.swift */; };
 		F436A6AA20B734DA00F257E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436A6A920B734DA00F257E4 /* ViewController.swift */; };
 		F436A6AD20B734DA00F257E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F436A6AB20B734DA00F257E4 /* Main.storyboard */; };
@@ -26,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33DE0227B900A4DB3ACC1760 /* Pods_NBCU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBCU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE1F565DE1FE0410BC13963 /* Pods-NBCUTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCUTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBCUTests/Pods-NBCUTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0C983BAE480E5AC9F176773 /* Pods_NBCUTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBCUTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB258EC0C8B3622E3C9706A6 /* Pods-NBCUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCUTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBCUTests/Pods-NBCUTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD3F7E290E7A2F136ADD8C41 /* Pods-NBCU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBCU/Pods-NBCU.debug.xcconfig"; sourceTree = "<group>"; };
+		CE14CA2F9DB18E0EE23563F4 /* Pods-NBCU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCU.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBCU/Pods-NBCU.release.xcconfig"; sourceTree = "<group>"; };
 		F436A6A420B734DA00F257E4 /* NBCU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBCU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F436A6A720B734DA00F257E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F436A6A920B734DA00F257E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D367203DF4278CD9FDA7F3F /* Pods_NBCU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002961AD26CEBEABEFA17118 /* Pods_NBCUTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9B9332F69632881EE9CB718 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F7E290E7A2F136ADD8C41 /* Pods-NBCU.debug.xcconfig */,
+				CE14CA2F9DB18E0EE23563F4 /* Pods-NBCU.release.xcconfig */,
+				CB258EC0C8B3622E3C9706A6 /* Pods-NBCUTests.debug.xcconfig */,
+				6FE1F565DE1FE0410BC13963 /* Pods-NBCUTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D713D9C82B1B593C6D7CD6AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33DE0227B900A4DB3ACC1760 /* Pods_NBCU.framework */,
+				B0C983BAE480E5AC9F176773 /* Pods_NBCUTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F436A69B20B734DA00F257E4 = {
 			isa = PBXGroup;
 			children = (
 				F436A6A620B734DA00F257E4 /* NBCU */,
 				F436A6BB20B734DD00F257E4 /* NBCUTests */,
 				F436A6A520B734DA00F257E4 /* Products */,
+				B9B9332F69632881EE9CB718 /* Pods */,
+				D713D9C82B1B593C6D7CD6AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				F436A6A720B734DA00F257E4 /* AppDelegate.swift */,
-				F436A6A920B734DA00F257E4 /* ViewController.swift */,
-				F436A6AB20B734DA00F257E4 /* Main.storyboard */,
+				F436A6C720B7377800F257E4 /* ViewControllers */,
+				F436A6C820B7378800F257E4 /* Storyboards */,
 				F436A6AE20B734DD00F257E4 /* Assets.xcassets */,
 				F436A6B020B734DD00F257E4 /* LaunchScreen.storyboard */,
 				F436A6B320B734DD00F257E4 /* Info.plist */,
@@ -96,6 +128,22 @@
 			path = NBCUTests;
 			sourceTree = "<group>";
 		};
+		F436A6C720B7377800F257E4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F436A6A920B734DA00F257E4 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F436A6C820B7378800F257E4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F436A6AB20B734DA00F257E4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F436A6C120B734DD00F257E4 /* Build configuration list for PBXNativeTarget "NBCU" */;
 			buildPhases = (
+				A491780AB3EF38860CAE812A /* [CP] Check Pods Manifest.lock */,
 				F436A6A020B734DA00F257E4 /* Sources */,
 				F436A6A120B734DA00F257E4 /* Frameworks */,
 				F436A6A220B734DA00F257E4 /* Resources */,
+				1146AB75420F8BE1DD5774C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +170,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F436A6C420B734DD00F257E4 /* Build configuration list for PBXNativeTarget "NBCUTests" */;
 			buildPhases = (
+				13903B8EAC468F4BC6910EE5 /* [CP] Check Pods Manifest.lock */,
 				F436A6B420B734DD00F257E4 /* Sources */,
 				F436A6B520B734DD00F257E4 /* Frameworks */,
 				F436A6B620B734DD00F257E4 /* Resources */,
@@ -191,6 +242,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1146AB75420F8BE1DD5774C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NBCU/Pods-NBCU-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBCU/Pods-NBCU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13903B8EAC468F4BC6910EE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBCUTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A491780AB3EF38860CAE812A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBCU-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F436A6A020B734DA00F257E4 /* Sources */ = {
@@ -356,10 +464,11 @@
 		};
 		F436A6C220B734DD00F257E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD3F7E290E7A2F136ADD8C41 /* Pods-NBCU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 76NH8DZK7Y;
+				DEVELOPMENT_TEAM = 7P4LQNMZS5;
 				INFOPLIST_FILE = NBCU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,10 +483,11 @@
 		};
 		F436A6C320B734DD00F257E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE14CA2F9DB18E0EE23563F4 /* Pods-NBCU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 76NH8DZK7Y;
+				DEVELOPMENT_TEAM = 7P4LQNMZS5;
 				INFOPLIST_FILE = NBCU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,6 +502,7 @@
 		};
 		F436A6C520B734DD00F257E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB258EC0C8B3622E3C9706A6 /* Pods-NBCUTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +524,7 @@
 		};
 		F436A6C620B734DD00F257E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FE1F565DE1FE0410BC13963 /* Pods-NBCUTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
