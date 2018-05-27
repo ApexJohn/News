@@ -1,0 +1,6 @@
+framework module Pods_NBCU {
+  umbrella header "Pods-NBCU-umbrella.h"
+
+  export *
+  module * { export * }
+}
