@@ -13,23 +13,23 @@ struct NewsItem: Codable {
     var type: String
     var url: String
     var headline: String
-    var published: String
-    var tease: String
+    var publishedOn: String
+    var imageUrl: String
     var summary: String
     var label: String
     var breaking: Bool?
     
-//    enum CodingKeys: String, CodingKey {
-//        case id
-//        case type
-//        case url
-//        case headline
-//        case published
-//        case tease
-//        case summary
-//        case label
-//        case breaking
-//    }
+    enum CodingKeys: String, CodingKey {
+        case id
+        case type
+        case url
+        case headline
+        case publishedOn = "published"
+        case imageUrl = "tease"
+        case summary
+        case label
+        case breaking
+    }
     
 //    init(from decoder: Decoder) throws {
 //        let containers = try decoder.container(keyedBy: CodingKeys.self)

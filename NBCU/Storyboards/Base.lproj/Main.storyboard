@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,9 +18,185 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3H1-A6-jnT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="cRb-l9-DD7">
+                                    <size key="itemSize" width="375" height="418"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newsCellId" id="OIw-kS-zWe" customClass="NewsItemCell" customModule="NBCU" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="418"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="418"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environement - Article" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFD-Rc-N9D">
+                                                    <rect key="frame" x="10" y="10" width="153.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 27 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQb-36-Z1W">
+                                                    <rect key="frame" x="277" y="10" width="88" height="14.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plastic straws: A 'luxury' that brings serious harm to the environment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYZ-TA-0TT">
+                                                    <rect key="frame" x="12" y="40" width="351" height="42.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42.5" id="2Cq-8G-qM0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5qK-ko-km3">
+                                                    <rect key="frame" x="0.0" y="90.5" width="375" height="249.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bans on plastic straws are catching on. But a similar fight against plastic bags proves how hard it is to regulate plastics." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7r-JA-3ff">
+                                                    <rect key="frame" x="16" y="344" width="343" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="7pu-8b-FDV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap for More" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-4i-bro">
+                                                    <rect key="frame" x="139" y="305.5" width="97" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="1" alpha="0.77141883389261745" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="u7r-JA-3ff" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leading" constant="16" id="2S6-a6-em4"/>
+                                            <constraint firstItem="rQb-36-Z1W" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" constant="269" id="AJ9-DG-hrZ"/>
+                                            <constraint firstItem="gYZ-TA-0TT" firstAttribute="top" secondItem="cFD-Rc-N9D" secondAttribute="bottom" constant="15.5" id="D6t-lV-ISI"/>
+                                            <constraint firstItem="cFD-Rc-N9D" firstAttribute="top" secondItem="OIw-kS-zWe" secondAttribute="topMargin" constant="2" id="Dwd-Hf-fml"/>
+                                            <constraint firstAttribute="trailing" secondItem="cFD-Rc-N9D" secondAttribute="trailingMargin" constant="219.5" id="GlB-bx-A1x"/>
+                                            <constraint firstItem="cFD-Rc-N9D" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" constant="2" id="HMn-SA-C4M"/>
+                                            <constraint firstItem="gYZ-TA-0TT" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" constant="4" id="HWE-HZ-RtV"/>
+                                            <constraint firstAttribute="bottom" secondItem="u7r-JA-3ff" secondAttribute="bottom" constant="4" id="Kms-MN-fAC"/>
+                                            <constraint firstItem="5qK-ko-km3" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leading" id="LP5-ga-oVP"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="gYZ-TA-0TT" secondAttribute="trailing" constant="4" id="Pd1-06-JkX"/>
+                                            <constraint firstAttribute="trailing" secondItem="u7r-JA-3ff" secondAttribute="trailing" constant="16" id="Rul-rG-q8J"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="rQb-36-Z1W" secondAttribute="trailing" constant="2" id="US5-7V-zuY"/>
+                                            <constraint firstItem="gYZ-TA-0TT" firstAttribute="top" secondItem="cFD-Rc-N9D" secondAttribute="bottom" constant="15" id="WUE-1H-MDd"/>
+                                            <constraint firstItem="d7c-4i-bro" firstAttribute="centerX" secondItem="5qK-ko-km3" secondAttribute="centerX" id="ZtB-WM-ZWO"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="gYZ-TA-0TT" secondAttribute="trailing" constant="4" id="cXS-oo-eIb"/>
+                                            <constraint firstAttribute="trailing" secondItem="5qK-ko-km3" secondAttribute="trailing" id="fHk-CC-LQR"/>
+                                            <constraint firstItem="gYZ-TA-0TT" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" constant="4" id="fOV-LG-81U"/>
+                                            <constraint firstItem="u7r-JA-3ff" firstAttribute="top" secondItem="5qK-ko-km3" secondAttribute="bottom" constant="4" id="fTd-yg-ST8"/>
+                                            <constraint firstItem="d7c-4i-bro" firstAttribute="bottom" secondItem="5qK-ko-km3" secondAttribute="bottom" constant="-13" id="kOa-Fu-Dia"/>
+                                            <constraint firstItem="5qK-ko-km3" firstAttribute="top" secondItem="gYZ-TA-0TT" secondAttribute="bottom" constant="8" id="vPQ-Up-Oel"/>
+                                            <constraint firstItem="rQb-36-Z1W" firstAttribute="centerY" secondItem="cFD-Rc-N9D" secondAttribute="centerY" id="vqY-MP-JEE"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ce0-Pf-wQE">
+                                        <rect key="frame" x="0.0" y="428" width="375" height="418"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="418"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environement - Article" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2s7-F1-1Ii">
+                                                    <rect key="frame" x="10" y="10" width="153.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 27 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcw-FP-RLS">
+                                                    <rect key="frame" x="277" y="10" width="88" height="14.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plastic straws: A 'luxury' that brings serious harm to the environment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgO-gE-Fdz">
+                                                    <rect key="frame" x="12" y="40" width="351" height="42.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42.5" id="65O-2g-ctq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sQh-KX-PEO">
+                                                    <rect key="frame" x="0.0" y="90.5" width="375" height="249.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bans on plastic straws are catching on. But a similar fight against plastic bags proves how hard it is to regulate plastics." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EY2-lu-dNp">
+                                                    <rect key="frame" x="16" y="344" width="343" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="RnC-0x-n5g"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap for More" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EK-PW-AHC">
+                                                    <rect key="frame" x="139" y="305.5" width="97" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="1" alpha="0.77141883389999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="7EK-PW-AHC" firstAttribute="bottom" secondItem="sQh-KX-PEO" secondAttribute="bottom" constant="-13" id="0Ey-lc-XjW"/>
+                                            <constraint firstAttribute="trailing" secondItem="EY2-lu-dNp" secondAttribute="trailing" constant="16" id="32r-x5-qc1"/>
+                                            <constraint firstItem="EY2-lu-dNp" firstAttribute="leading" secondItem="Ce0-Pf-wQE" secondAttribute="leading" constant="16" id="96M-Po-gzf"/>
+                                            <constraint firstAttribute="bottom" secondItem="EY2-lu-dNp" secondAttribute="bottom" constant="4" id="DPF-19-YwW"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="MgO-gE-Fdz" secondAttribute="trailing" constant="4" id="DVM-TH-SHc"/>
+                                            <constraint firstAttribute="trailing" secondItem="2s7-F1-1Ii" secondAttribute="trailingMargin" constant="219.5" id="Fcg-0x-yJc"/>
+                                            <constraint firstItem="sQh-KX-PEO" firstAttribute="top" secondItem="MgO-gE-Fdz" secondAttribute="bottom" constant="8" id="GbP-kN-BxI"/>
+                                            <constraint firstItem="EY2-lu-dNp" firstAttribute="top" secondItem="sQh-KX-PEO" secondAttribute="bottom" constant="4" id="Hva-Jh-X8F"/>
+                                            <constraint firstItem="MgO-gE-Fdz" firstAttribute="top" secondItem="2s7-F1-1Ii" secondAttribute="bottom" constant="15.5" id="NEI-ft-iEz"/>
+                                            <constraint firstItem="2s7-F1-1Ii" firstAttribute="leading" secondItem="Ce0-Pf-wQE" secondAttribute="leadingMargin" constant="2" id="Rob-Tr-ZBw"/>
+                                            <constraint firstItem="sQh-KX-PEO" firstAttribute="leading" secondItem="Ce0-Pf-wQE" secondAttribute="leading" id="SO8-Pk-fsr"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="MgO-gE-Fdz" secondAttribute="trailing" constant="4" id="VaN-4t-D5L"/>
+                                            <constraint firstItem="MgO-gE-Fdz" firstAttribute="leading" secondItem="Ce0-Pf-wQE" secondAttribute="leadingMargin" constant="4" id="Vze-2m-jMy"/>
+                                            <constraint firstItem="MgO-gE-Fdz" firstAttribute="leading" secondItem="Ce0-Pf-wQE" secondAttribute="leadingMargin" constant="4" id="Z4p-6A-SZA"/>
+                                            <constraint firstItem="7EK-PW-AHC" firstAttribute="centerX" secondItem="sQh-KX-PEO" secondAttribute="centerX" id="ZEd-VB-sdI"/>
+                                            <constraint firstItem="MgO-gE-Fdz" firstAttribute="top" secondItem="2s7-F1-1Ii" secondAttribute="bottom" constant="15" id="hz0-yW-pZ9"/>
+                                            <constraint firstItem="Xcw-FP-RLS" firstAttribute="leading" secondItem="Ce0-Pf-wQE" secondAttribute="leadingMargin" constant="269" id="mms-Q4-bnC"/>
+                                            <constraint firstItem="Xcw-FP-RLS" firstAttribute="centerY" secondItem="2s7-F1-1Ii" secondAttribute="centerY" id="nbG-J8-31Y"/>
+                                            <constraint firstItem="2s7-F1-1Ii" firstAttribute="top" secondItem="Ce0-Pf-wQE" secondAttribute="topMargin" constant="2" id="nv1-iI-g9B"/>
+                                            <constraint firstAttribute="trailing" secondItem="sQh-KX-PEO" secondAttribute="trailing" id="qT4-9s-adf"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Xcw-FP-RLS" secondAttribute="trailing" constant="2" id="r2E-lj-7wh"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="4GN-gH-Rh4"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3H1-A6-jnT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4P9-J1-c6W"/>
+                            <constraint firstItem="3H1-A6-jnT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9sg-wj-0A5"/>
+                            <constraint firstItem="3H1-A6-jnT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wi5-jm-Awn"/>
+                            <constraint firstItem="3H1-A6-jnT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="py4-I9-rHu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="newsCollectionView" destination="3H1-A6-jnT" id="xfn-mw-sZ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
