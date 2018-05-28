@@ -124,25 +124,31 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="aFU-rY-1jK"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7sI-uA-VxS">
+                                <rect key="frame" x="177" y="643" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7sI-uA-VxS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2hI-EY-U7j"/>
                             <constraint firstItem="3H1-A6-jnT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4P9-J1-c6W"/>
-                            <constraint firstItem="3H1-A6-jnT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9sg-wj-0A5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7sI-uA-VxS" secondAttribute="bottom" constant="4" id="KfH-ok-OlV"/>
                             <constraint firstItem="3H1-A6-jnT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wi5-jm-Awn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3H1-A6-jnT" secondAttribute="bottom" id="YUg-af-W5j"/>
                             <constraint firstItem="3H1-A6-jnT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="py4-I9-rHu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="NBC News" id="wl3-dD-aYu"/>
                     <connections>
+                        <outlet property="loadMoreIndicator" destination="7sI-uA-VxS" id="u4V-FX-a8H"/>
                         <outlet property="newsCollectionView" destination="3H1-A6-jnT" id="xfn-mw-sZ8"/>
                         <segue destination="Lsl-fc-VR0" kind="show" identifier="showDetailsWebViewSegue" id="WaL-iJ-fRG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100" y="66"/>
+            <point key="canvasLocation" x="-100" y="65.217391304347828"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QQc-6G-a2S">

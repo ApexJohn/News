@@ -11,6 +11,7 @@ import Alamofire
 
 class NewsViewController: UIViewController {
     
+    @IBOutlet weak var loadMoreIndicator: UIActivityIndicatorView!
     @IBOutlet weak var newsCollectionView: UICollectionView!
     
     private var newsSections = [NewsSection]() {
@@ -26,18 +27,11 @@ class NewsViewController: UIViewController {
     // MARK: ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadMoreNews()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        self.newsService.loadSections { [weak self] (sections, error) in
-            if let error = error {
-                self?.handleError(error)
-            } else {
-                self?.newsSections = sections
-            }
-        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -47,7 +41,23 @@ class NewsViewController: UIViewController {
             detailsVC.newsItem = newsItem
         }
     }
+    
     // MARK: private
+    
+    private func loadMoreNews() {
+        
+        self.loadMoreIndicator.startAnimating()
+        
+        self.newsService.loadSections { [weak self] (sections, error) in
+            if let error = error {
+                self?.handleError(error)
+            } else {
+                self?.newsSections = sections
+            }
+            
+            self?.loadMoreIndicator.stopAnimating()
+        }
+    }
     
     private func handleError(_ error: NSError) {
         let alertController = UIAlertController(title: "Sorry", message: error.localizedDescription, preferredStyle: .alert)
@@ -96,5 +106,18 @@ extension NewsViewController: UICollectionViewDelegateFlowLayout {
         let newsItem = self.newsSections[indexPath.section].items[indexPath.row]
         self.performSegue(withIdentifier: self.newsDetailsSegueId,
                           sender: newsItem)
+    }
+}
+
+extension NewsViewController: UIScrollViewDelegate {
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        let scrollViewHeight = scrollView.frame.size.height
+        let scrollViewContentHeight = scrollView.contentSize.height
+        
+        if scrollViewHeight + scrollView.contentOffset.y > scrollViewContentHeight {
+            self.loadMoreNews()
+        }
     }
 }
