@@ -1,0 +1,266 @@
+[
+ {
+ "id": "curation/news/",
+ "type": "Section",
+ "header": "NBC News - Breaking News & Top Stories - Latest World, US & Local News",
+ "showMore": false,
+ "items": [
+           {
+           "id": "ncna877356",
+           "type": "article",
+           "url": "https://www.nbcnews.com/news/us-news/plastic-straws-clog-ocean-hurt-fish-now-there-s-growing-n877356",
+           "headline": "Plastic straws: A 'luxury' that brings serious harm to the environment",
+           "published": "2018-05-26T15:12:00Z",
+           "tease": "https://media2.s-nbcnews.com/i/newscms/2018_21/2445676/180525-sea-turtle-rehab-2004-ac-747p_73c4a0997bd08b2b1a265457e4e285f8.jpg",
+           "summary": "Bans on plastic straws are catching on. But a similar fight against plastic bags proves how hard it is to regulate plastics.",
+           "label": "ENVIRONMENT",
+           "breaking": false
+           },
+           {
+           "id": "mmvo1242718275540",
+           "type": "video",
+           "url": "https://www.nbcnews.com/mach/video/bread-to-toast-fighting-food-waste-one-beer-at-a-time-1242718275540",
+           "headline": "Bread to Toast: Fighting food waste one beer at a time",
+           "published": "2018-05-27T06:09:20Z",
+           "tease": "https://media1.s-nbcnews.com/i/MSNBC/Components/Video/201805/d_mach_mach_beer_180526.jpg",
+           "summary": "Toast Ale is a beer that’s made from surplus bread. The company was founded by environmentalist Tristram Stuart in part to help bakeries recycle bread that otherwise would have been wasted. It brings together food producers who are committed to prioritizing sustainable means of production, and is helping raise public awareness about wasted food.",
+           "label": "MACH",
+           "mpxID": "1242718275540",
+           "duration": "00:05:09",
+           "preview": "http://public.vilynx.com/8206cc305a58265cab429687325fbe77/pro69.viwindow.mp4",
+           "videoUrl": "http://link.theplatform.com/s/2E2eJC/jeTht8vXUKkV?mbr=true&manifest=m3u&metafile=none",
+           "associatedPlaylist": "videoplaylist/mmlsnnd_mach",
+           "freeWheel": {
+           "fileName": "d_mach_mach_beer_180526",
+           "target": {
+           "sect": "news"
+           }
+           },
+           "tracking": {
+           "adobe": {
+           "a.media.length": "309",
+           "videocontenttype": "broadcast",
+           "videocontentsource": "nbcnews",
+           "videopublishdate": "2018-05-27T06:09:20Z",
+           "videotitle": "Bread to Toast: Fighting food waste one beer at a time",
+           "videoprogram": "mach",
+           "videompxid": "1242718275540",
+           "network": "nbcnews",
+           "videoguid": "d_mach_mach_beer_180526",
+           "videocontentrating": "positive",
+           "videoplaylist": "Mach",
+           "videoplaylistid": "nnd_mach"
+           },
+           "nielsen": {
+           "type": "broadcast",
+           "assetid": "d_mach_mach_beer_180526",
+           "crossid2": "d_mach_mach_beer_180526",
+           "program": "mach",
+           "title": "Bread to Toast: Fighting food waste one beer at a time",
+           "length": "309",
+           "airdate": "2018-05-27T06:09:20Z",
+           "isfullepisode": "false"
+           },
+           "comscore": {
+           "ns_st_ci": "d_mach_mach_beer_180526",
+           "ns_st_cl": "309000",
+           "ns_st_pu": "nbcnews",
+           "ns_st_pr": "mach",
+           "ns_st_ep": "Bread to Toast: Fighting food waste one beer at a time",
+           "ns_st_sn": "*null",
+           "ns_st_en": "*null",
+           "ns_st_ge": "News",
+           "ns_st_ti": "*null",
+           "ns_st_ia": "0",
+           "ns_st_ce": "0",
+           "ns_st_ddt": "2018-05-27T14:32:00Z",
+           "ns_st_tdt": "2018-05-27T06:09:20Z"
+           }
+           }
+           },
+           {
+           "id": "ncsl877361",
+           "type": "slideshow",
+           "url": "https://www.nbcnews.com/slideshow/week-pictures-may-17-24-n877361",
+           "headline": "The Week in Pictures: May 17 - 24",
+           "published": "2018-05-25T10:18:03Z",
+           "tease": "https://media2.s-nbcnews.com/i/newscms/2018_21/2444116/ss-180524-twip-10_72b96c0bfde7893980139f0ae559f829.jpg",
+           "summary": "Harry marries Meghan, U.S. Air Force cadets graduate, lava gushes into the Pacific and more. ",
+           "label": "WEEK IN PICTURES",
+           "images": [
+                      {
+                      "id": "ncim2444071",
+                      "url": "https://media4.s-nbcnews.com/i/newscms/2018_21/2444071/ss-180524-twip-01_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "",
+                      "published": "2018-05-25T00:10:37Z",
+                      "caption": "Meghan Markle walks down the aisle as she arrives for her wedding ceremony to Prince Harry at St. George's Chapel in Windsor Castle in Windsor, England, on May 19, 2018.",
+                      "copyright": "Pool via AP",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444076",
+                      "url": "https://media4.s-nbcnews.com/i/newscms/2018_21/2444076/ss-180524-twip-02_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "A bird rests on the head of a white-tailed deer",
+                      "published": "2018-05-25T00:10:38Z",
+                      "caption": "A bird rests on the head of a white-tailed deer roaming free in San Jose Villanueva, El Salvador, on May 21.",
+                      "copyright": "AFP - Getty Images",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444081",
+                      "url": "https://media3.s-nbcnews.com/i/newscms/2018_21/2444081/ss-180524-twip-03_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "",
+                      "published": "2018-05-25T00:10:40Z",
+                      "caption": "U.S. Air Force Academy cadets toss their hats in the air as the Thunderbirds fly overhead during the cadets' graduation ceremony in Colorado Springs, Colorado, on May 23.",
+                      "copyright": "The Gazette via AP",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444086",
+                      "url": "https://media1.s-nbcnews.com/i/newscms/2018_21/2444086/ss-180524-twip-04_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Steam plumes rise as lava from a fissure enters the Pacific Ocean on Hawaii's Big Island near Pahoa",
+                      "published": "2018-05-25T00:10:42Z",
+                      "caption": "Steam plumes rise as lava from a fissure enters the Pacific Ocean on Hawaii's Big Island near Pahoa on May 21. The lava haze, or \"laze,\" is created when molten rock hits the ocean. It is just the latest hazard from a volcano that has been generating earthquakes and spewing lava, sulfur dioxide and ash since it began erupting in Big Island backyards on May 3.",
+                      "copyright": "Getty Images",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444091",
+                      "url": "https://media2.s-nbcnews.com/i/newscms/2018_21/2444091/ss-180524-twip-05_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Lava flows into the Pacific Ocean southeast of Pahoa",
+                      "published": "2018-05-25T00:10:43Z",
+                      "caption": "Lava flows into the Pacific Ocean southeast of Pahoa during ongoing eruptions of the Kilauea Volcano in Hawaii on May 20.",
+                      "copyright": "Reuters",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444096",
+                      "url": "https://media2.s-nbcnews.com/i/newscms/2018_21/2444096/ss-180524-twip-06_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "",
+                      "published": "2018-05-25T00:10:45Z",
+                      "caption": "Santa Fe High School student Dakota Shrader is comforted by her mother Susan Davidson following a shooting at the school on May 18 in Santa Fe, Texas. Shrader said her friend was shot in the incident. A teenager with a shotgun blasted his way into an art classroom and killed 10 people -- eight students and two teachers. It was the nation's deadliest such attack since the massacre in Florida that gave rise to a campaign by teens for gun control.",
+                      "copyright": "The Galveston County Daily News via AP",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444101",
+                      "url": "https://media2.s-nbcnews.com/i/newscms/2018_21/2444101/ss-180524-twip-07_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Santa Fe High School baseball players bow their heads in a moment of silence for the shooting victims",
+                      "published": "2018-05-25T00:10:47Z",
+                      "caption": "Santa Fe High School baseball players bow their heads in a moment of silence for the shooting victims at their school before a baseball game against Kingwood Park High School in Deer Park, Texas, on May 19.",
+                      "copyright": "AP",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444106",
+                      "url": "https://media3.s-nbcnews.com/i/newscms/2018_21/2444106/ss-180524-twip-08_6ffd6ff4f19ac550d37492d31ebcf1ff.jpg",
+                      "headline": "A plebe places a midshipman's cap on top of the grease covered 21-foot Herndon Monument",
+                      "published": "2018-05-25T01:33:49Z",
+                      "caption": "A plebe places a midshipman's cap on top of the grease covered 21-foot Herndon Monument, ending their freshman year at the U.S. Naval Academy in Annapolis, Maryland, on May 21. The Herndon Climb was completed this year in 2 hours, 9 minutes and 35 seconds.",
+                      "copyright": "Reuters",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444111",
+                      "url": "https://media1.s-nbcnews.com/i/newscms/2018_21/2444111/ss-180524-twip-09_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Prince Harry, Duke of Sussex and the Duchess of Sussex leave following their wedding ceremony",
+                      "published": "2018-05-25T00:10:50Z",
+                      "caption": "Prince Harry, Duke of Sussex and the Duchess of Sussex leave following their wedding ceremony in St George's Chapel at Windsor Castle on May 19, in Windsor, England.",
+                      "copyright": "WPA pool via Getty Images",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444116",
+                      "url": "https://media2.s-nbcnews.com/i/newscms/2018_21/2444116/ss-180524-twip-10_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Prince Harry and Meghan Markle kiss on the steps of St George's Chapel",
+                      "published": "2018-05-25T00:10:52Z",
+                      "caption": "Prince Harry and Meghan Markle kiss on the steps of St George's Chapel in Windsor Castle after their wedding on May 19.",
+                      "copyright": "Reuters",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444121",
+                      "url": "https://media3.s-nbcnews.com/i/newscms/2018_21/2444121/ss-180524-twip-11_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "A man stands inside cabin with a view of the Milky Way",
+                      "published": "2018-05-25T00:10:54Z",
+                      "caption": "A man stands inside cabin with a view of the Milky Way galaxy in Ormont Valley, Switzerland, early on May 18.",
+                      "copyright": "EPA",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444126",
+                      "url": "https://media4.s-nbcnews.com/i/newscms/2018_21/2444126/ss-180524-twip-12_03f458997b55041b057116d0229efc87.jpg",
+                      "headline": "Fast-moving lava flow consumes everything in its path",
+                      "published": "2018-05-26T20:20:02Z",
+                      "caption": "Fast-moving lava flow consumes everything in its path, setting a home on fire near Pahoa, Hawaii, on May 19, 2018.",
+                      "copyright": "Paradise Helicopters via EPA",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444131",
+                      "url": "https://media4.s-nbcnews.com/i/newscms/2018_21/2444131/ss-180524-twip-13_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Girls salute during celebrations for National Haitian Flag Day in the streets of Petion Ville, Port-au-Prince",
+                      "published": "2018-05-25T00:10:57Z",
+                      "caption": "Girls salute during celebrations for National Haitian Flag Day in the streets of Petion Ville, Port-au-Prince, Haiti, on May 18.",
+                      "copyright": "Reuters",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444136",
+                      "url": "https://media4.s-nbcnews.com/i/newscms/2018_21/2444136/ss-180524-twip-14_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Muslims perform Friday prayer on the first day of Ramadan at Baitul Mukarram National Mosque in Dhaka",
+                      "published": "2018-05-25T00:10:58Z",
+                      "caption": "Muslims perform Friday prayer on the first day of Ramadan at Baitul Mukarram national mosque in Dhaka, Bangladesh, on May 18.",
+                      "copyright": "Reuters",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444141",
+                      "url": "https://media1.s-nbcnews.com/i/newscms/2018_21/2444141/ss-180524-twip-15_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "",
+                      "published": "2018-05-25T00:11:00Z",
+                      "caption": "One of the five newborn African spurred tortoises remains atop a male turtle at the zoo in Guadalajara, Mexico, on May 17.",
+                      "copyright": "AFP - Getty Images",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444146",
+                      "url": "https://media3.s-nbcnews.com/i/newscms/2018_21/2444146/ss-180524-twip-16_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Police stand near the wreckage of a school bus on Interstate 80 following an accident with a dump truck in Mount Olive Township",
+                      "published": "2018-05-25T00:11:02Z",
+                      "caption": "Police stand near the wreckage of a school bus on Interstate 80 following an accident with a dump truck in Mount Olive Township, New Jersey, on May 17.",
+                      "copyright": "Reuters",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444151",
+                      "url": "https://media2.s-nbcnews.com/i/newscms/2018_21/2444151/ss-180524-twip-17_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Lava erupts and flows from a Kilauea volcano fissure in Kapoho",
+                      "published": "2018-05-25T00:11:04Z",
+                      "caption": "Lava erupts and flows from a Kilauea volcano fissure in Kapoho, Hawaii, on May 18. The U.S. Geological Survey said the volcano erupted explosively on May 17 launching a plume about 30,000 feet into the sky.",
+                      "copyright": "Getty Images",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444156",
+                      "url": "https://media2.s-nbcnews.com/i/newscms/2018_21/2444156/ss-180524-twip-18_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "A woman breaks her fast following the first day of Ramadan",
+                      "published": "2018-05-25T00:11:06Z",
+                      "caption": "A woman breaks her fast following the first day of Ramadan in the yard of a mosque in Surabaya, Indonesia, on May 17.",
+                      "copyright": "Getty Images",
+                      "graphic": false
+                      },
+                      {
+                      "id": "ncim2444161",
+                      "url": "https://media3.s-nbcnews.com/i/newscms/2018_21/2444161/ss-180524-twip-19_72b96c0bfde7893980139f0ae559f829.jpg",
+                      "headline": "Royal Wedding",
+                      "published": "2018-05-25T00:11:08Z",
+                      "caption": "Prince Harry and Meghan Markle ride in an Ascot Landau along the Long Walk after their wedding in St George's Chapel in Windsor Castl Windsor, Britain, May 19.",
+                      "copyright": "Pool via Reuters",
+                      "graphic": false
+                      }
+                      ]
+           }
+           ]
+ }
+ ]
