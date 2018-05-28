@@ -12,15 +12,18 @@ import Alamofire
 class NewsViewController: UIViewController {
     
     @IBOutlet weak var newsCollectionView: UICollectionView!
+    
     private var newsSections = [NewsSection]() {
         didSet {
             self.newsCollectionView.reloadData()
         }
     }
-    
     private let newsCellId = "newsCellId"
+    private let newsDetailsSegueId = "showDetailsWebViewSegue"
     private var newsService = NewsService()
     
+    
+    // MARK: ViewController lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,14 +31,23 @@ class NewsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.newsService.loadSections { (sections, error) in
+        self.newsService.loadSections { [weak self] (sections, error) in
             if let error = error {
-                self.handleError(error)
+                self?.handleError(error)
             } else {
-                self.newsSections = sections
+                self?.newsSections = sections
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? NewsDetailsWebViewController,
+            let newsItem = sender as? NewsItem {
+            
+            detailsVC.newsItem = newsItem
+        }
+    }
+    // MARK: private
     
     private func handleError(_ error: NSError) {
         let alertController = UIAlertController(title: "Sorry", message: error.localizedDescription, preferredStyle: .alert)
@@ -44,6 +56,7 @@ class NewsViewController: UIViewController {
     }
 }
 
+// MARK:
 extension NewsViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -65,6 +78,7 @@ extension NewsViewController: UICollectionViewDataSource {
     }
 }
 
+// MARK:
 extension NewsViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -75,5 +89,12 @@ extension NewsViewController: UICollectionViewDelegateFlowLayout {
         let cellDefaultHeight: CGFloat = 418
         
         return CGSize(width: width, height: cellDefaultHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let newsItem = self.newsSections[indexPath.section].items[indexPath.row]
+        self.performSegue(withIdentifier: self.newsDetailsSegueId,
+                          sender: newsItem)
     }
 }

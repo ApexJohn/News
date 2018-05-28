@@ -20,6 +20,8 @@
 		F4E233F520BB30D300C7D606 /* NBCUNews.json in Resources */ = {isa = PBXBuildFile; fileRef = F4E233F420BB30D300C7D606 /* NBCUNews.json */; };
 		F4E233FB20BB96E200C7D606 /* NewsSectionParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E233FA20BB96E200C7D606 /* NewsSectionParsingTest.swift */; };
 		F4E233FF20BBA18300C7D606 /* NewsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E233FE20BBA18300C7D606 /* NewsItemCell.swift */; };
+		F4E2340220BCBA9400C7D606 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2340120BCBA9400C7D606 /* ImageCache.swift */; };
+		F4E2340420BCC09F00C7D606 /* NewsDetailsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2340320BCC09F00C7D606 /* NewsDetailsWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		F4E233F420BB30D300C7D606 /* NBCUNews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NBCUNews.json; sourceTree = "<group>"; };
 		F4E233FA20BB96E200C7D606 /* NewsSectionParsingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsSectionParsingTest.swift; path = /Users/Home/Desktop/NBCU/NBCUTests/NewsSectionParsingTest.swift; sourceTree = "<absolute>"; };
 		F4E233FE20BBA18300C7D606 /* NewsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemCell.swift; sourceTree = "<group>"; };
+		F4E2340120BCBA9400C7D606 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		F4E2340320BCC09F00C7D606 /* NewsDetailsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 		F436A6A620B734DA00F257E4 /* NBCU */ = {
 			isa = PBXGroup;
 			children = (
+				F4E2340020BCBA6D00C7D606 /* Utility */,
 				F4E233FC20BBA13700C7D606 /* Views */,
 				F4E233EE20BB2C0300C7D606 /* AppDelegate */,
 				F436A6C720B7377800F257E4 /* ViewControllers */,
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				F436A6A920B734DA00F257E4 /* NewsViewController.swift */,
+				F4E2340320BCC09F00C7D606 /* NewsDetailsWebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,6 +203,14 @@
 				F4E233FE20BBA18300C7D606 /* NewsItemCell.swift */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		F4E2340020BCBA6D00C7D606 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F4E2340120BCBA9400C7D606 /* ImageCache.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E2340220BCBA9400C7D606 /* ImageCache.swift in Sources */,
+				F4E2340420BCC09F00C7D606 /* NewsDetailsWebViewController.swift in Sources */,
 				F4E233EC20BB2BF300C7D606 /* NewsService.swift in Sources */,
 				F4E233FF20BBA18300C7D606 /* NewsItemCell.swift in Sources */,
 				F4E233F320BB2EE800C7D606 /* NewsItem.swift in Sources */,
@@ -532,7 +548,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7P4LQNMZS5;
 				INFOPLIST_FILE = NBCU/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.basheer.malaa.apps.flickerph.NBCU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -548,7 +567,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7P4LQNMZS5;
 				INFOPLIST_FILE = NBCU/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.basheer.malaa.apps.flickerph.NBCU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -565,7 +587,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76NH8DZK7Y;
 				INFOPLIST_FILE = NBCUTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.basheer.malaa.apps.flickerph.NBCUTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -583,7 +609,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76NH8DZK7Y;
 				INFOPLIST_FILE = NBCUTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.basheer.malaa.apps.flickerph.NBCUTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
