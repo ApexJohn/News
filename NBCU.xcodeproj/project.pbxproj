@@ -10,11 +10,15 @@
 		002961AD26CEBEABEFA17118 /* Pods_NBCUTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C983BAE480E5AC9F176773 /* Pods_NBCUTests.framework */; };
 		4D367203DF4278CD9FDA7F3F /* Pods_NBCU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DE0227B900A4DB3ACC1760 /* Pods_NBCU.framework */; };
 		F436A6A820B734DA00F257E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436A6A720B734DA00F257E4 /* AppDelegate.swift */; };
-		F436A6AA20B734DA00F257E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436A6A920B734DA00F257E4 /* ViewController.swift */; };
+		F436A6AA20B734DA00F257E4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436A6A920B734DA00F257E4 /* NewsViewController.swift */; };
 		F436A6AD20B734DA00F257E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F436A6AB20B734DA00F257E4 /* Main.storyboard */; };
 		F436A6AF20B734DD00F257E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F436A6AE20B734DD00F257E4 /* Assets.xcassets */; };
 		F436A6B220B734DD00F257E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F436A6B020B734DD00F257E4 /* LaunchScreen.storyboard */; };
-		F436A6BD20B734DD00F257E4 /* NBCUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436A6BC20B734DD00F257E4 /* NBCUTests.swift */; };
+		F4E233EC20BB2BF300C7D606 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E233EB20BB2BF300C7D606 /* NewsService.swift */; };
+		F4E233F020BB2CE400C7D606 /* NewsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E233EF20BB2CE400C7D606 /* NewsSection.swift */; };
+		F4E233F320BB2EE800C7D606 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E233F220BB2EE800C7D606 /* NewsItem.swift */; };
+		F4E233F520BB30D300C7D606 /* NBCUNews.json in Resources */ = {isa = PBXBuildFile; fileRef = F4E233F420BB30D300C7D606 /* NBCUNews.json */; };
+		F4E233FB20BB96E200C7D606 /* NewsSectionParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E233FA20BB96E200C7D606 /* NewsSectionParsingTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +40,18 @@
 		CE14CA2F9DB18E0EE23563F4 /* Pods-NBCU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCU.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBCU/Pods-NBCU.release.xcconfig"; sourceTree = "<group>"; };
 		F436A6A420B734DA00F257E4 /* NBCU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBCU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F436A6A720B734DA00F257E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F436A6A920B734DA00F257E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F436A6A920B734DA00F257E4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		F436A6AC20B734DA00F257E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F436A6AE20B734DD00F257E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F436A6B120B734DD00F257E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F436A6B320B734DD00F257E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F436A6B820B734DD00F257E4 /* NBCUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBCUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F436A6BC20B734DD00F257E4 /* NBCUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBCUTests.swift; sourceTree = "<group>"; };
 		F436A6BE20B734DD00F257E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E233EB20BB2BF300C7D606 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		F4E233EF20BB2CE400C7D606 /* NewsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSection.swift; sourceTree = "<group>"; };
+		F4E233F220BB2EE800C7D606 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		F4E233F420BB30D300C7D606 /* NBCUNews.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NBCUNews.json; sourceTree = "<group>"; };
+		F4E233FA20BB96E200C7D606 /* NewsSectionParsingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsSectionParsingTest.swift; path = /Users/Home/Desktop/NBCU/NBCUTests/NewsSectionParsingTest.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +117,14 @@
 		F436A6A620B734DA00F257E4 /* NBCU */ = {
 			isa = PBXGroup;
 			children = (
-				F436A6A720B734DA00F257E4 /* AppDelegate.swift */,
+				F4E233EE20BB2C0300C7D606 /* AppDelegate */,
 				F436A6C720B7377800F257E4 /* ViewControllers */,
 				F436A6C820B7378800F257E4 /* Storyboards */,
 				F436A6AE20B734DD00F257E4 /* Assets.xcassets */,
 				F436A6B020B734DD00F257E4 /* LaunchScreen.storyboard */,
 				F436A6B320B734DD00F257E4 /* Info.plist */,
+				F4E233ED20BB2BFB00C7D606 /* Services */,
+				F4E233F120BB2CEB00C7D606 /* NewsSection */,
 			);
 			path = NBCU;
 			sourceTree = "<group>";
@@ -122,7 +132,8 @@
 		F436A6BB20B734DD00F257E4 /* NBCUTests */ = {
 			isa = PBXGroup;
 			children = (
-				F436A6BC20B734DD00F257E4 /* NBCUTests.swift */,
+				F4E233FA20BB96E200C7D606 /* NewsSectionParsingTest.swift */,
+				F4E233F420BB30D300C7D606 /* NBCUNews.json */,
 				F436A6BE20B734DD00F257E4 /* Info.plist */,
 			);
 			path = NBCUTests;
@@ -131,7 +142,7 @@
 		F436A6C720B7377800F257E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F436A6A920B734DA00F257E4 /* ViewController.swift */,
+				F436A6A920B734DA00F257E4 /* NewsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -142,6 +153,31 @@
 				F436A6AB20B734DA00F257E4 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F4E233ED20BB2BFB00C7D606 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F4E233EB20BB2BF300C7D606 /* NewsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4E233EE20BB2C0300C7D606 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F436A6A720B734DA00F257E4 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F4E233F120BB2CEB00C7D606 /* NewsSection */ = {
+			isa = PBXGroup;
+			children = (
+				F4E233EF20BB2CE400C7D606 /* NewsSection.swift */,
+				F4E233F220BB2EE800C7D606 /* NewsItem.swift */,
+			);
+			path = NewsSection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E233F520BB30D300C7D606 /* NBCUNews.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +342,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F436A6AA20B734DA00F257E4 /* ViewController.swift in Sources */,
+				F4E233EC20BB2BF300C7D606 /* NewsService.swift in Sources */,
+				F4E233F320BB2EE800C7D606 /* NewsItem.swift in Sources */,
+				F436A6AA20B734DA00F257E4 /* NewsViewController.swift in Sources */,
+				F4E233F020BB2CE400C7D606 /* NewsSection.swift in Sources */,
 				F436A6A820B734DA00F257E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,7 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F436A6BD20B734DD00F257E4 /* NBCUTests.swift in Sources */,
+				F4E233FB20BB96E200C7D606 /* NewsSectionParsingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

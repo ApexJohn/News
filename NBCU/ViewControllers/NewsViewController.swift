@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class NewsViewController: UIViewController {
     
     @IBOutlet weak var reachabilityLabel: UILabel!
 
