@@ -37,41 +37,41 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environement - Article" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFD-Rc-N9D">
-                                                    <rect key="frame" x="10" y="10" width="153.5" height="14.5"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <rect key="frame" x="8" y="10" width="108.5" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 27 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQb-36-Z1W">
-                                                    <rect key="frame" x="277" y="10" width="88" height="14.5"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <rect key="frame" x="303" y="10" width="62" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plastic straws: A 'luxury' that brings serious harm to the environment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYZ-TA-0TT">
-                                                    <rect key="frame" x="12" y="40" width="351" height="42.5"/>
+                                                    <rect key="frame" x="12" y="37.5" width="351" height="42.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="42.5" id="2Cq-8G-qM0"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5qK-ko-km3">
-                                                    <rect key="frame" x="0.0" y="90.5" width="375" height="249.5"/>
+                                                    <rect key="frame" x="0.0" y="88" width="375" height="248"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bans on plastic straws are catching on. But a similar fight against plastic bags proves how hard it is to regulate plastics." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7r-JA-3ff">
-                                                    <rect key="frame" x="16" y="344" width="343" height="70"/>
+                                                    <rect key="frame" x="16" y="340" width="343" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="7pu-8b-FDV"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap for More" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-4i-bro">
-                                                    <rect key="frame" x="139" y="305.5" width="97" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="146.5" y="305" width="82" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" white="1" alpha="0.77141883389261745" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,27 +82,34 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="u7r-JA-3ff" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leading" constant="16" id="2S6-a6-em4"/>
-                                            <constraint firstItem="rQb-36-Z1W" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" constant="269" id="AJ9-DG-hrZ"/>
-                                            <constraint firstItem="gYZ-TA-0TT" firstAttribute="top" secondItem="cFD-Rc-N9D" secondAttribute="bottom" constant="15.5" id="D6t-lV-ISI"/>
-                                            <constraint firstItem="cFD-Rc-N9D" firstAttribute="top" secondItem="OIw-kS-zWe" secondAttribute="topMargin" constant="2" id="Dwd-Hf-fml"/>
-                                            <constraint firstAttribute="trailing" secondItem="cFD-Rc-N9D" secondAttribute="trailingMargin" constant="219.5" id="GlB-bx-A1x"/>
-                                            <constraint firstItem="cFD-Rc-N9D" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" constant="2" id="HMn-SA-C4M"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="rQb-36-Z1W" secondAttribute="trailing" constant="2" id="CyR-NQ-oqb"/>
+                                            <constraint firstItem="rQb-36-Z1W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" id="GvZ-m4-TuU"/>
                                             <constraint firstItem="gYZ-TA-0TT" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" constant="4" id="HWE-HZ-RtV"/>
-                                            <constraint firstAttribute="bottom" secondItem="u7r-JA-3ff" secondAttribute="bottom" constant="4" id="Kms-MN-fAC"/>
+                                            <constraint firstAttribute="bottom" secondItem="u7r-JA-3ff" secondAttribute="bottom" constant="8" id="Kms-MN-fAC"/>
                                             <constraint firstItem="5qK-ko-km3" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leading" id="LP5-ga-oVP"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="gYZ-TA-0TT" secondAttribute="trailing" constant="4" id="Pd1-06-JkX"/>
                                             <constraint firstAttribute="trailing" secondItem="u7r-JA-3ff" secondAttribute="trailing" constant="16" id="Rul-rG-q8J"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="rQb-36-Z1W" secondAttribute="trailing" constant="2" id="US5-7V-zuY"/>
-                                            <constraint firstItem="gYZ-TA-0TT" firstAttribute="top" secondItem="cFD-Rc-N9D" secondAttribute="bottom" constant="15" id="WUE-1H-MDd"/>
                                             <constraint firstItem="d7c-4i-bro" firstAttribute="centerX" secondItem="5qK-ko-km3" secondAttribute="centerX" id="ZtB-WM-ZWO"/>
+                                            <constraint firstItem="cFD-Rc-N9D" firstAttribute="top" secondItem="OIw-kS-zWe" secondAttribute="topMargin" constant="2" id="aZs-3b-uNZ"/>
+                                            <constraint firstItem="rQb-36-Z1W" firstAttribute="top" secondItem="OIw-kS-zWe" secondAttribute="topMargin" constant="2" id="bD2-ru-GsX"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="gYZ-TA-0TT" secondAttribute="trailing" constant="4" id="cXS-oo-eIb"/>
                                             <constraint firstAttribute="trailing" secondItem="5qK-ko-km3" secondAttribute="trailing" id="fHk-CC-LQR"/>
                                             <constraint firstItem="gYZ-TA-0TT" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" constant="4" id="fOV-LG-81U"/>
                                             <constraint firstItem="u7r-JA-3ff" firstAttribute="top" secondItem="5qK-ko-km3" secondAttribute="bottom" constant="4" id="fTd-yg-ST8"/>
+                                            <constraint firstItem="gYZ-TA-0TT" firstAttribute="top" secondItem="cFD-Rc-N9D" secondAttribute="bottom" constant="15.5" id="gVy-va-mAc"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cFD-Rc-N9D" secondAttribute="trailingMargin" id="hi9-cs-di8"/>
                                             <constraint firstItem="d7c-4i-bro" firstAttribute="bottom" secondItem="5qK-ko-km3" secondAttribute="bottom" constant="-13" id="kOa-Fu-Dia"/>
+                                            <constraint firstItem="cFD-Rc-N9D" firstAttribute="leading" secondItem="OIw-kS-zWe" secondAttribute="leadingMargin" id="tqK-Zb-nLL"/>
                                             <constraint firstItem="5qK-ko-km3" firstAttribute="top" secondItem="gYZ-TA-0TT" secondAttribute="bottom" constant="8" id="vPQ-Up-Oel"/>
-                                            <constraint firstItem="rQb-36-Z1W" firstAttribute="centerY" secondItem="cFD-Rc-N9D" secondAttribute="centerY" id="vqY-MP-JEE"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="rQb-36-Z1W" id="QMg-cP-mvJ"/>
+                                            <outlet property="headerLabel" destination="gYZ-TA-0TT" id="jch-Vb-yk7"/>
+                                            <outlet property="imageView" destination="5qK-ko-km3" id="qde-yf-KpM"/>
+                                            <outlet property="itemTypeLabel" destination="cFD-Rc-N9D" id="X0Z-lG-q6N"/>
+                                            <outlet property="summaryLabel" destination="u7r-JA-3ff" id="yNd-3p-cI3"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ce0-Pf-wQE">
                                         <rect key="frame" x="0.0" y="428" width="375" height="418"/>
@@ -182,6 +189,7 @@
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="4GN-gH-Rh4"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aFU-rY-1jK"/>
                                 </connections>
                             </collectionView>
                         </subviews>
